@@ -54,7 +54,7 @@
 }
 .div2-1:hover #color
 {
-  color: rgb(0, 255, 0);
+  color: black;
   transition: 0.5s;
 }
 
