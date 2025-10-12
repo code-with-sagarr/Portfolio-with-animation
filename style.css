@@ -4,12 +4,16 @@
     margin: 0;
     box-sizing: border-box;
     text-transform: uppercase;
+    font-family:"Inter", sans-serif;;
+    
 }
 #div1
 {
-    height: 730px;
-    width: 35%;
-    border:1px solid black;
+    
+    width: 38%;
+    padding:10px ;
+    box-sizing: border-box;
+   
     
 }
 #div2
@@ -20,54 +24,168 @@
     justify-content: center;
     height: 730px;
     width: 65%;
-    border:1ps solid black;
-    background-color: rgb(110, 65, 5);
+    background-color:black;
     grid-template-columns: auto auto;
     padding: 2px;
     margin: 2px;
     gap: 10px;
+    box-sizing: border-box;
 
 }
 #main-div
 {
     display: flex;
-    background-color: rgb(240, 233, 233);
+    align-items: center;
+    background-color:black;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100vh;
+    
+   
 }
 .div2-1
 {
-    height: 320px;
-    width: 420px;
-    background-color: rgb(255, 255, 255);
+    height: 335px;
+    width: 460px;
+    background:linear-gradient(rgb(34, 33, 33),black);
     transition: 0.8s;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-weight: 800;
     font-size: 35px;
-    box-shadow: 2px 2px 2px gray;
-    
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    color:white
     
 }
+#div2-1-1
+{
+    height: 335px;
+    width: 460px;
+    transition: 0.8s;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 35px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    color:white
+    
+}
+
+
+
 #color
 {
     color: rgb(0, 255, 0);
 }
 .div2-1:hover #color
 {
-  color: black;
+  color:white;
   transition: 0.5s;
 }
 
 .div2-1:hover
 {
-   width: 450px;
-   height: 350px;
-   background-color: rgb(240, 22, 7);
+   transform:scale(0.95);
    border-radius: 10px;
-   transform: rotate(2.5deg);
+   
+   
 }
 .div2-1:hover span
 {
-    color: yellow;
+    color:rgb(0, 255, 0);
     transition: 0.5s;
 }
+.div2-1:hover #dev
+{
+    color:rgb(0, 255, 0);
+    transition: 0.5s;
+}
+#dev
+{
+    font-family:"Inter", sans-serif;;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgb(81, 255, 0);
+    width: 0;
+    animation: typing 5s steps(20) 1s forwards,blink 06s step-end infinite alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-sizing: border-box;
+    
+}
+#name
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    row-gap: 10px;
+    box-sizing: border-box;
+    
+}
+
+@keyframes typing {
+    from
+    {
+        width: 0;
+        color: rgb(81, 255, 0);
+        
+ }
+ to
+ {
+    width: 19ch;
+    color:rgb(81, 255, 0);
+ }
+}
+
+@media (max-width: 768px) {
+
+    *
+    {
+        padding: 0;
+        margin: 0;
+    }
+    #main-div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    #div1, #div2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #div2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        height: auto;
+        
+        gap: 15px;
+    }
+
+    .div2-1 {
+        width: 550px;
+        height: 250px;
+        font-size: 24px;
+    }
+
+    #dev {
+        font-size: 18px;
+    }
+
+    
+}
+
