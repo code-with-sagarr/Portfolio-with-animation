@@ -7,6 +7,9 @@
     font-family:"Inter", sans-serif;;
     
 }
+a{
+    text-decoration: none;
+}
 #div1
 {
     
@@ -89,12 +92,14 @@
 {
   color:white;
   transition: 0.5s;
+  
 }
 
 .div2-1:hover
 {
    transform:scale(0.95);
    border-radius: 10px;
+   
    
    
 }
