@@ -1,0 +1,153 @@
+*
+{
+    color: white;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.about-div
+{
+    display: flex;
+    align-items: flex-start;
+    background-color:black;
+    justify-content: center;
+    column-gap: 10px;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: auto;
+}
+#aboutcontent
+{
+    display: flex;
+   background:linear-gradient(rgb(34, 33, 33),black);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 50px;
+    margin: 10px;
+    height:690px;
+    width: 100vw;
+    padding: 10px;
+}
+.profile-about
+{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    box-sizing: border-box;
+    column-gap: 10px;
+    
+
+}
+#about-p
+{
+   
+   width:80%;
+   height: fit-content;
+
+}
+.about-p-div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#btn1
+{
+    padding: 10px;
+    background-color:rgb(78, 222, 12);
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    width: 350px;
+    transition: all 0.3s;
+}
+#btn1:hover{
+    background-color: transparent;
+    border: none;
+    transform: scale(1);
+    box-shadow: 2px 2px 2px rgb(78, 222, 12)    ;
+
+}
+#blog-btn
+{
+    padding: 10px;
+    background-color:transparent;
+    border: 1px solid rgb(78, 222, 12);
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    width: 350px;
+    transition: all 0.3s;
+}
+#blog-btn:hover{
+    
+    border: none;
+    transform: scale(1);
+    box-shadow: 2px 2px 2px rgb(78, 222, 12)    ;
+
+}
+.back-btn
+{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    border: none;
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.back-btn:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    
+    
+}
+span{
+    font-weight: 900;
+    color: rgb(78, 222, 12);
+    
+}
+hr{
+    width: 400px; 
+    border: 1px solid rgb(78, 222, 12);
+}
+
+
+@media (max-width:768px) {
+    
+    hr
+    {
+        width: 100px;
+    }
+    .about-div
+    {
+        
+        height:100%;
+        width: fit-content;
+    }
+    #div1
+    {
+        display: none;
+    }
+    #aboutcontent{
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        padding: auto;
+        column-gap: 10px;
+    }
+    .two-btn
+    {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
