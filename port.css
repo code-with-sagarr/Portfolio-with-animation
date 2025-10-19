@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-transform: capitalize;
+    font-family:"Inter", sans-serif;;
+
+}
+body{
+    background-color: black;
+    
+}
+a{
+    text-decoration: none;
+}
+.divp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.box-p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 690px;
+    width: fit-content;
+    background: rgb(18, 18, 18);
+    overflow:auto;
+    padding-top: 20px;
+}
+
+#fronted {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: none;
+}
+
+.isro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: linear-gradient( rgb(69, 67, 67), rgb(18, 18, 18));
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.isroc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.isroc>img {
+
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(159, 160, 159);
+    box-sizing: border-box;
+    height: 200px;
+
+}
+.mobile
+{
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+    list-style-image: url('/img/shooting-star.png');
+    width: 20px;
+    
+}
+
+.tech {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#hr1 {
+    width: 400px;
+    border: 2px solid rgb(78, 222, 12);
+    border-radius: 50%;
+}
+
+.back-btn {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+}
+
+.back-btn:hover 
+{
+    background-color: rgb(78, 222, 12);
+}
+
+button {
+    box-sizing: border-box;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px rgb(78, 222, 12);
+    border: none;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+    transition: all 0.3s;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+}
+
+button:hover {
+    background-color: rgb(78, 222, 12);
+    ;
+}
+
+h2 {
+
+    background: linear-gradient(60deg, rgb(224, 218, 218), rgb(111, 105, 105));
+    background-clip: text;
+    color: transparent;
+}
+
+hr {
+    border-color: rgb(78, 222, 12);
+
+}
+@media (max-width: 768px) {
+
+   
+     #div1>img
+    {
+        display: none;
+    }
+   #hr1
+    {
+        width:80px;
+        
+    }
+    .isroc
+    {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .box-p
+    {
+          width:auto;
+    }
+    .isro
+    {
+        width: fit-content;
+    }
+    .box{
+        width:fit-content;
+    }
+   .back-btn
+   {
+    right: 10px;
+    top: 5px;
+   }
+   .mobile
+   {
+    width:70%;
+   }
+    
+    
+}
