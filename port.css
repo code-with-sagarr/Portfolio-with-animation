@@ -82,7 +82,7 @@ a{
 
 ul {
     list-style: none;
-    list-style-image: url('/img/shooting-star.png');
+    list-style-image: url('shooting-star.png');
     width: 20px;
     
 }
