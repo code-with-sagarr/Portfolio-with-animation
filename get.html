@@ -71,25 +71,30 @@
           <p>If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I
             will reply you shortly.
           </p>
+ <form action="https://api.web3forms.com/submit" method="POST">
+             <input type="hidden" name="access_key" value="ee125add-9025-4d71-81ea-fa6329be7fbe">
 
           <div style="display: flex;flex-direction: column;row-gap: 40px;padding-top: 20px;">
 
             <div class="massage">
-              <img style="width: 20px;height: 20px;" src="user.png" alt=""><input class="inp" type="text"
+              <img style="width: 20px;height: 20px;" src="./img/user.png" alt=""><input class="inp" type="text" name="name"
                 placeholder="name">
             </div>
 
             <div class="massage">
-              <img style="width: 20px;height: 20px;" src="mail.png" alt=""><input class="inp" type="email"
+              <img style="width: 20px;height: 20px;" src="./img/mail.png" alt=""><input class="inp" type="email" name="email"
                 placeholder="Email">
             </div>
 
             <div class="massage" style="display: flex;">
-              <img style="width: 20px;height: 20px;" src="bubble-chat.png" alt="">
-              <textarea placeholder="massage" class="inp"></textarea>
+              <img style="width: 20px;height: 20px;" src="./img/bubble-chat.png" alt="">
+              <textarea placeholder="massage" class="inp" name="message"></textarea>
             </div>
 
+            <button class="glow-button" type="submit">Submit</button>
+
           </div>
+          </form>
 
 
         </div>
